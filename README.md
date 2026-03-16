@@ -1,36 +1,76 @@
 # 🔍 AI Inspection System
 
-An AI-powered visual inspection system that analyzes uploaded images and automatically evaluates cleanliness and arrangement of objects.
+An AI-powered visual inspection system that analyzes uploaded images and evaluates cleanliness and object arrangement using **OpenAI Vision models and LangChain**.
 
-Built using **LangChain, OpenAI Vision models, Streamlit, and Docker**.
+The system provides automated inspection results through an interactive **Streamlit dashboard**.
 
 ---
 
-# 🚀 Features
+##  Features
 
-- Upload an inspection image
-- AI analyzes the environment
+- Upload inspection images
+- AI analyzes environment cleanliness
 - Automated checklist evaluation
-- Clean visual dashboard
-- Containerized using Docker
+- Interactive Streamlit dashboard
+- Docker-ready deployment
 
 ---
 
-# 🧠 Example Inspection Checks
+##  Tech Stack
 
-The AI evaluates:
+- Python
+- LangChain
+- OpenAI Vision Model
+- Streamlit
+- OpenCV
+- Docker
 
-- Glass cleanliness
-- Floor cleanliness
-- Chair arrangement
-- Room condition
+---
 
-Example output:
+## 📂 Project Structure
+ai-inspection-system
+│
+├── app
+│ ├── chains
+│ ├── models
+│ ├── prompts
+│ ├── services
+│ └── ui
+│
+├── data
+├── screenshots
+├── requirements.txt
+└── README.md
 
-```json
-{
- "glass_clean": "Yes",
- "floor_clean": "Yes",
- "chairs_arranged": "No",
- "room_clean": "Yes"
-}
+
+---
+
+## 📸 Screenshots
+
+### Dashboard
+
+![Dashboard](screenshots/app_ui.png)
+
+### Inspection Result
+
+![Result](screenshots/inspection_result_1.png)
+
+---
+
+## ▶️ Run the Project
+
+```bash
+git clone https://github.com/ramaIAS2026/ai-inspection-system.git
+cd ai-inspection-system
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+pip install -r requirements.txt
+streamlit run app/ui/streamlit_app.py
+
+#http://localhost:8501
+
+#  Author
+
+# Rama Devi Puppala
